@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Varela+Round&display=swap');
+/* 
+.noto-sans-<uniquifier> {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  } */
+*{
+    /* padding-left: 20px; */
+}
+
+
+.food-account-container{
+    display: flex;
+    flex-direction: row;
+    /* width:200px; */
+    /* background-color: blue; */
+    height: auto;
+    margin-bottom:25px;
+    padding: 20px;   
+    justify-content: space-between; 
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: 0.75rem;
+      /* border:1px solid green; */
+      border-right:1px solid black;
+}
+.food-account-spent-per-day{
+    display: flex;
+    flex-direction: column;
+    /* padding:15px; */
+    /* background-color: red; */
+}
+.food-account-spent-img{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    /* align-items:center; */
+    height: 100%;
+    color:green;
+    
+    /* background-color: green; */
+    
+}
+.account-spent-logo{
+    width:60px;
+    aspect-ratio: 1/1;
+
+}
+.spent-per-day-tag{
+    margin-bottom: 15px;
+    margin-right:15px;
+
+}
+.spent-per-day-amount{
+    font-weight: 700;
+
+}
+.day-food-transactions{
+    display: flex;
+    font-size: 0.75rem;
+    justify-content:space-between;
+
+}
+.day-food-transactions-1, .day-food-transactions-2{
+    display: flex;
+    flex-direction: column;
+
+}
+.all-transactions-tag{
+    margin-bottom: 1rem;
+}
+.all-transactions-filter{
+    margin-bottom: 1rem;
+    background-color:rgb(170, 167, 167);
+    width:fit-content;
+    padding:6px 16px;
+    padding-left:0px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    display:flex;
+    justify-content:center;
+}
+.transaction-length{
+    border-radius: 50%;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    padding:0.22rem 0.5125rem;
+    font-size: 0.555rem;
+    font-weight:700;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    
+}
+.bulk-reminder{
+    margin-bottom: 1rem;
+    padding:6px 16px;
+    padding-left:5px;
+    width:fit-content;
+    background-color:rgb(170, 167, 167);
+    border-radius:5px;
+    borde:none;
+    outline:none;
+    display:flex;
+    justify-content:center;
+}
+.ci-filter{
+    margin-right:10px;
+}
+.in-out-range{
+    margin-bottom: 1rem;
+    display:flex;
+    padding:6px 16px;
+    justify-content:center;
+    width:fit-content;
+    padding-left:0px;
+}
+.out-range{
+    margin-left: 0rem;
+    padding-left: 0rem;
+}.custom-elipse:hover{
+    color:green;
+    cursor:pointer;
+
+}
+.transaction-list-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    /* width: 21.875rem; */
+    justify-content: space-between;
+    /* background-color: green; */
+    border-bottom:1px solid black;
+
+}
+.transaction-list-1{
+    display: flex;
+    justify-content: start
+}
+.account-img{
+
+}
+.transaction-account-img-prev{
+    border-radius: 50%;
+    width: 3.125rem;
+    margin-right: 15px;
+}
+.account-description{
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.transaction-list-2{
+    position: inherit;
+    display: flex;
+    /* padding-bottom: 15px; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.transaction-actual-amount{
+    color: green;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding-right:30px;
+}
+.account-description-date{
+    font-size: 0.65rem;
+    font-weight:300;
+}
+.my-food-transaction-table{
+    display:flex;
+    flex-direction:column;
+    /* width:399px; */
+    margin-right:50px;
+}
+.food-table-specifics{
+    position: relative;
+}
+.combined-day-container{
+    display:flex;
+    flex-direction:column;
+    min-width:400;
+    overflow: hidden;
+
+}
+.combined-dash-board{
+    display:flex;
+    flex-direction:row;
+
+}
+.search-in-combined{
+    display:flex;
+    padding:0px 25px;
+
+}
+.combined-table{
+    margin-top:30px;
+    padding:0px 25px;
+}
+.custom-elipse-container{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+.cutom-elipse-details{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    border-left:1px solid gray ;
+    padding-left: 20px;
+    transition:  1s linear;
+    /* z-index: -46463245; */
+    /* background-color: red; */
+    /* align-items: center; */
+    /* justify-content: center; */
+   
+
+}
+.hidden-child{
+    margin-bottom:10px;
+    cursor: pointer;
+    padding:5px;
+    font-size: 10px;
+    font-family: sans-serif;
+
+}
+.hidden-child:hover{
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+.hidden{
+    display: none;
+}
+.light-up{
+    color:red;
+    background-color: red;
+}
+.pop-up-for-one{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    z-index: 30;
+    background-color: #fff;
+    
+}
+
+.faded{
+    opacity: 0.2;
+}
+.anti-faded{
+    opacity: 1;
+}
